@@ -1,0 +1,18 @@
+{
+  "folders": [
+    {
+      "path": "."
+    }
+  ],
+  "settings": {
+    "files.associations": {
+      "*.css": "tailwindcss"
+    },
+    "scss.validate": false,
+    "css.validate": false
+  },
+  "extensions": {
+    "recommendations": ["MisterJ.vue-volar-extention-pack", "bradlc.vscode-tailwindcss", "stylelint.vscode-stylelint"],
+    "unwantedRecommendations": ["vscode.typescript-language-features"]
+  }
+}

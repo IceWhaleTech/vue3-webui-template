@@ -1,0 +1,10 @@
+{
+  "recommendations": [
+    "MisterJ.vue-volar-extention-pack",
+    "bradlc.vscode-tailwindcss",
+    "stylelint.vscode-stylelint"
+  ],
+  "unwantedRecommendations": [
+    "vscode.typescript-language-features"
+  ]
+}
