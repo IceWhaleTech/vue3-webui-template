@@ -20,7 +20,3 @@ const count = ref(0);
     </div>
   </div>
 </template>
-
-<style scoped>
-
-</style>
