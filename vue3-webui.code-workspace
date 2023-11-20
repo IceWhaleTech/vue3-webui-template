@@ -1,9 +1,9 @@
 {
   "folders": [
-    {
-      "path": "."
-    }
-  ],
+	{
+		"path": "../chat-with-my-docs"
+	}
+],
   "settings": {
     "files.associations": {
       "*.css": "tailwindcss"
