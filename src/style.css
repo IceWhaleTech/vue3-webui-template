@@ -7,17 +7,17 @@
 @layer tailwind-utilities {
   @tailwind components;
   @tailwind utilities;
-}
 
-:root {
-  @apply subpixel-antialiased;
-  @apply bg-slate-800 text-white;
-}
+  :root {
+    @apply subpixel-antialiased;
+    @apply bg-slate-800 text-white;
+  }
 
-body {
-  @apply flex h-100dvh w-100dvw place-items-center justify-center;
-}
+  #app {
+    @apply flex h-100dvh w-100dvw place-items-center justify-center;
+  }
 
-code {
-  @apply rounded bg-gray-900/80 px-2 py-1 font-mono;
+  code {
+    @apply rounded bg-gray-900/80 px-2 py-1 font-mono;
+  }
 }

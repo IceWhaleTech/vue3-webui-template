@@ -1,0 +1,8 @@
+{
+  "title": "Vue3 WebUI Template",
+  "logoDescription": "Click on the logos to learn more",
+  "helloworld": "Hello, World!",
+  "count": "Count: {count}",
+  "editFileToTestHMR": "Edit {0} to test HMR",
+  "checkFileToGetStarted": "Check out {0} to get started and get better DX!"
+}

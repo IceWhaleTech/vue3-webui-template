@@ -1,13 +1,25 @@
 {
   "folders": [
-	{
-		"path": "."
-	}
-],
+    {
+      "path": "."
+    }
+  ],
   "settings": {
     "files.associations": {
       "*.css": "tailwindcss"
     },
+    "editor.quickSuggestions": {
+      "strings": "on"
+    },
+    "tailwindCSS.classAttributes": ["class", "className", "ngClass", ".*Styles*"],
+    "tailwindCSS.experimental.classRegex": [
+      // class: "" / class: ''
+      "\\bclass:\\s*[\"']([^\"']*)[\"']",
+      // class: []
+      "\\bclass:\\s*\\[[^\\]]*\\]",
+      // class: {}
+      "\\bclass:\\s*\\{[^}]*\\}"
+    ],
     "scss.validate": false,
     "css.validate": false
   },

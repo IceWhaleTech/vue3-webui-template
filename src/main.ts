@@ -1,14 +1,19 @@
 import App from "./App.vue";
+import { i18n } from "./i18n";
 import "./style.css";
+import { pt } from "./tailwind";
 import "primeicons/primeicons.css";
-import PrimeVue from "primevue/config";
+import PrimeVue, { PrimeVueConfiguration } from "primevue/config";
 import "primevue/resources/themes/lara-dark-blue/theme.css";
+import Tooltip from "primevue/tooltip";
 import { createApp } from "vue";
 
 let app: ReturnType<typeof createApp>;
 function mountApp() {
   app = createApp(App);
-  app.use(PrimeVue, { ripple: false });
+  app.use(i18n);
+  app.use(PrimeVue, { unstyled: true, pt: pt } as PrimeVueConfiguration);
+  app.directive("tooltip", Tooltip);
   app.mount("#app");
 }
 function unmountApp() {

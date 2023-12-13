@@ -9,22 +9,27 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@vueuse/core": "^10.7.0",
     "primeicons": "^6.0.1",
     "primevue": "^3.40.1",
     "vue": "^3.3.4",
+    "vue-i18n": "^9.8.0",
     "wujie-vue3": "^1.0.21"
   },
   "devDependencies": {
+    "@intlify/unplugin-vue-i18n": "^1.6.0",
     "@tailwindcss/container-queries": "^0.1.1",
     "@tailwindcss/typography": "^0.5.10",
     "@trivago/prettier-plugin-sort-imports": "^4.3.0",
     "@vitejs/plugin-vue": "^4.2.3",
+    "@vitejs/plugin-vue-jsx": "^3.1.0",
     "autoprefixer": "^10.4.16",
     "postcss": "^8.4.31",
     "prettier": "^3.1.0",
     "prettier-plugin-organize-attributes": "^1.0.0",
     "prettier-plugin-tailwindcss": "^0.5.7",
     "stylelint-config-recommended": "^13.0.0",
+    "tailwind-scrollbar": "^3.0.5",
     "tailwindcss": "^3.3.5",
     "tailwindcss-animate": "^1.0.7",
     "typescript": "^5.0.2",

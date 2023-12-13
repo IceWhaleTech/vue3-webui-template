@@ -27,7 +27,7 @@ pnpm i
 
 ### Recommended IDE Setup
 
-- [VS Code](https://code.visualstudio.com/) 
+- [VS Code](https://code.visualstudio.com/)
   - Settings:
     - Use Workspace ([vue3-webui.code-workspace](./vue3-webui.code-workspace))
     - Change `Format Document` to `Prettier - Code formatter`
@@ -56,23 +56,29 @@ If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has a
 
 - Base Framework
   - Vite
+    - @vitejs/plugin-vue [📖](https://github.com/vitejs/vite-plugin-vue/tree/main/packages/plugin-vue)
+    - @vitejs/plugin-vue-jsx [📖](https://github.com/vitejs/vite-plugin-vue/tree/main/packages/plugin-vue-jsx)
+    - @intlify/unplugin-vue-i18n/vite [📖](https://www.npmjs.com/package/@intlify/unplugin-vue-i18n)
   - Vue3
+    - @vueuse/core [📖](https://vueuse.org/functions.html)
+    - vue-i18n [📖](https://vue-i18n.intlify.dev/)
   - TypeScript
 - UI Framework
-  - PrimeVue
-    - PrimeIcons
-  - TailwindCSS
-    - @tailwindcss/typography
-    - @tailwindcss/container-queries
-    - tailwindcss-animate
+  - PrimeVue [📖](https://primevue.org/installation/)
+    - PrimeIcons [📖](https://primevue.org/icons)
+  - Tailwind CSS [📖](https://tailwindcss.com/docs)
+    - @tailwindcss/typography [📖](https://tailwindcss.com/docs/typography-plugin)
+    - @tailwindcss/container-queries [📖](https://github.com/tailwindlabs/tailwindcss-container-queries)
+    - tailwindcss-animate [📖](https://github.com/jamiebuilds/tailwindcss-animate)
+    - tailwind-scrollbar [📖](https://adoxography.github.io/tailwind-scrollbar/examples)
 - Micro Frontend
-  - Wujie
+  - Wujie [📖](https://wujie-micro.github.io/doc/)
 - Developer Experience
   - VSCode
     - settings.json
     - extensions.json
     - .code-workspace
   - Prettier
-    - prettier-plugin-organize-attributes
-    - @trivago/prettier-plugin-sort-imports
-    - prettier-plugin-tailwindcss
+    - prettier-plugin-organize-attributes [📖](https://github.com/NiklasPor/prettier-plugin-organize-attributes)
+    - @trivago/prettier-plugin-sort-imports [📖](https://github.com/trivago/prettier-plugin-sort-imports)
+    - prettier-plugin-tailwindcss [📖](https://github.com/tailwindlabs/prettier-plugin-tailwindcss)

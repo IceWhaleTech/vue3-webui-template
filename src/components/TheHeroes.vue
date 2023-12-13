@@ -30,7 +30,7 @@
         <span class="text-xl">Wujie</span>
       </a>
     </div>
-    <p class="font-serif italic tracking-wide text-gray-500">Click on the logos to learn more</p>
+    <p class="font-serif italic tracking-wide text-gray-500">{{ $t("logoDescription") }}</p>
   </div>
 </template>
 
