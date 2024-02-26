@@ -4,5 +4,7 @@
   "helloworld": "Hello, World!",
   "count": "Count: {count}",
   "editFileToTestHMR": "Edit {0} to test HMR",
-  "checkFileToGetStarted": "Check out {0} to get started and get better DX!"
+  "checkFileToGetStarted": "Check out {0} to get started and get better DX!",
+  "homeInfo": "This is Home",
+  "otherInfo": "This is Other"
 }

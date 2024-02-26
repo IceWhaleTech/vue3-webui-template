@@ -15,7 +15,7 @@
         <img class="logo typescript" src="../assets/typescript.svg" alt="TypeScript logo" />
         <span class="text-xl">TypeScript</span>
       </a>
-      <i class="pi pi-plus motion-safe:animate-pulse"></i>
+      <span class="text-5xl font-extralight motion-safe:animate-pulse">+</span>
       <a class="flex flex-col items-center" href="https://primevue.org" target="_blank">
         <img class="logo primevue" src="../assets/primevue.svg" alt="PrimeVue" />
         <span class="text-xl">PrimeVue</span>
@@ -24,7 +24,7 @@
         <img class="logo tailwind" src="../assets/tailwind.svg" alt="TailwindCSS" />
         <span class="text-xl">TailwindCSS</span>
       </a>
-      <i class="pi pi-plus motion-safe:animate-pulse"></i>
+      <span class="text-5xl font-extralight motion-safe:animate-pulse">+</span>
       <a class="flex flex-col items-center" href="https://wujie-micro.github.io/doc/" target="_blank">
         <img class="logo wujie" src="../assets/wujie.svg" alt="Wujie logo" />
         <span class="text-xl">Wujie</span>

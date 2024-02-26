@@ -24,7 +24,12 @@
     "css.validate": false
   },
   "extensions": {
-    "recommendations": ["MisterJ.vue-volar-extention-pack", "bradlc.vscode-tailwindcss", "stylelint.vscode-stylelint"],
+    "recommendations": [
+      "MisterJ.vue-volar-extention-pack",
+      "bradlc.vscode-tailwindcss",
+      "stylelint.vscode-stylelint",
+      "idered.npm"
+    ],
     "unwantedRecommendations": ["vscode.typescript-language-features"]
   }
 }

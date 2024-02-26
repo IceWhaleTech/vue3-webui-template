@@ -14,7 +14,7 @@
   }
 
   #app {
-    @apply flex h-100dvh w-100dvw place-items-center justify-center;
+    @apply flex h-dvh w-dvw place-items-center justify-center;
   }
 
   code {

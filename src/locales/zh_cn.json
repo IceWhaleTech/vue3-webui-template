@@ -4,5 +4,7 @@
   "helloworld": "你好，世界！",
   "count": "计数：{count}",
   "editFileToTestHMR": "编辑 {0} 来测试 HMR",
-  "checkFileToGetStarted": "查看 {0} 开始上手，并获得更好的开发者体验！"
+  "checkFileToGetStarted": "查看 {0} 开始上手，并获得更好的开发者体验！",
+  "homeInfo": "这是Home",
+  "otherInfo": "这是Other"
 }
