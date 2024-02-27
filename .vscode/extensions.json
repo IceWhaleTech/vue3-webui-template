@@ -4,7 +4,8 @@
     "bradlc.vscode-tailwindcss",
     "stylelint.vscode-stylelint",
     "antfu.iconify",
-    "idered.npm"
+    "idered.npm",
+    "wix.vscode-import-cost"
   ],
   "unwantedRecommendations": ["vscode.typescript-language-features"]
 }

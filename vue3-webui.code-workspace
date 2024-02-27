@@ -1,15 +1,15 @@
 {
   "folders": [
     {
-      "path": "."
-    }
+      "path": ".",
+    },
   ],
   "settings": {
     "files.associations": {
-      "*.css": "tailwindcss"
+      "*.css": "tailwindcss",
     },
     "editor.quickSuggestions": {
-      "strings": "on"
+      "strings": "on",
     },
     "tailwindCSS.classAttributes": ["class", "className", "ngClass", ".*Styles*"],
     "tailwindCSS.experimental.classRegex": [
@@ -18,10 +18,10 @@
       // class: []
       "\\bclass:\\s*\\[[^\\]]*\\]",
       // class: {}
-      "\\bclass:\\s*\\{[^}]*\\}"
+      "\\bclass:\\s*\\{[^}]*\\}",
     ],
     "scss.validate": false,
-    "css.validate": false
+    "css.validate": false,
   },
   "extensions": {
     "recommendations": [
@@ -29,8 +29,9 @@
       "bradlc.vscode-tailwindcss",
       "stylelint.vscode-stylelint",
       "antfu.iconify",
-      "idered.npm"
+      "idered.npm",
+      "wix.vscode-import-cost",
     ],
-    "unwantedRecommendations": ["vscode.typescript-language-features"]
-  }
+    "unwantedRecommendations": ["vscode.typescript-language-features"],
+  },
 }

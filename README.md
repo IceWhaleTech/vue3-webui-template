@@ -42,6 +42,7 @@ pnpm i
       - [stylelint](https://marketplace.visualstudio.com/items?itemName=stylelint.vscode-stylelint)
       - [Iconify IntelliSense](https://marketplace.visualstudio.com/items?itemName=antfu.iconify)
       - [NPM](https://marketplace.visualstudio.com/items?itemName=idered.npm)
+      - [Import Cost](https://marketplace.visualstudio.com/items?itemName=wix.vscode-import-cost)
 
 #### Type Support For `.vue` Imports in TS
 
