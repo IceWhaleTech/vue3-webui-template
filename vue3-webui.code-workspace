@@ -28,6 +28,7 @@
       "MisterJ.vue-volar-extention-pack",
       "bradlc.vscode-tailwindcss",
       "stylelint.vscode-stylelint",
+      "antfu.iconify",
       "idered.npm"
     ],
     "unwantedRecommendations": ["vscode.typescript-language-features"]

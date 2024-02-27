@@ -40,6 +40,8 @@ pnpm i
       - [Vue Volar extension Pack](https://marketplace.visualstudio.com/items?itemName=MisterJ.vue-volar-extention-pack)
       - [Tailwind CSS IntelliSense](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss)
       - [stylelint](https://marketplace.visualstudio.com/items?itemName=stylelint.vscode-stylelint)
+      - [Iconify IntelliSense](https://marketplace.visualstudio.com/items?itemName=antfu.iconify)
+      - [NPM](https://marketplace.visualstudio.com/items?itemName=idered.npm)
 
 #### Type Support For `.vue` Imports in TS
 
@@ -59,9 +61,11 @@ If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has a
     - @vitejs/plugin-vue [📖](https://github.com/vitejs/vite-plugin-vue/tree/main/packages/plugin-vue)
     - @vitejs/plugin-vue-jsx [📖](https://github.com/vitejs/vite-plugin-vue/tree/main/packages/plugin-vue-jsx)
     - @intlify/unplugin-vue-i18n/vite [📖](https://www.npmjs.com/package/@intlify/unplugin-vue-i18n)
+    - unplugin-icons (autoInstall enabled) [📖](https://github.com/unplugin/unplugin-icons) [🎭](https://icones.js.org/)
   - Vue3
     - @vueuse/core [📖](https://vueuse.org/functions.html)
     - vue-i18n [📖](https://vue-i18n.intlify.dev/)
+    - vue-router [📖](https://router.vuejs.org/)
   - TypeScript
 - UI Framework
   - PrimeVue [📖](https://primevue.org/installation/)
