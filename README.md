@@ -35,7 +35,6 @@ pnpm i
     - Disable
       - Unused extensions (workspace)
       - Vetur (workspace)
-      - `@builtin TypeScript and JavaScript Language Features` (workspace)
     - Install all recommended extensions from `.vscode/extensions.json` (workspace)
       - [Vue Volar extension Pack](https://marketplace.visualstudio.com/items?itemName=MisterJ.vue-volar-extention-pack)
       - [Tailwind CSS IntelliSense](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss)
@@ -43,17 +42,6 @@ pnpm i
       - [Iconify IntelliSense](https://marketplace.visualstudio.com/items?itemName=antfu.iconify)
       - [NPM](https://marketplace.visualstudio.com/items?itemName=idered.npm)
       - [Import Cost](https://marketplace.visualstudio.com/items?itemName=wix.vscode-import-cost)
-
-#### Type Support For `.vue` Imports in TS
-
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin) to make the TypeScript language service aware of `.vue` types.
-
-If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has also implemented a [Take Over Mode](https://github.com/johnsoncodehk/volar/discussions/471#discussioncomment-1361669) that is more performant. You can enable it by the following steps:
-
-1. Disable the built-in TypeScript Extension
-   1. Run `Extensions: Show Built-in Extensions` from VSCode's command palette
-   2. Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
-2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
 
 ## Features
 
