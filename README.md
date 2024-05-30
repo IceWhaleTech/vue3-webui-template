@@ -42,6 +42,7 @@ pnpm i
       - [Iconify IntelliSense](https://marketplace.visualstudio.com/items?itemName=antfu.iconify)
       - [NPM](https://marketplace.visualstudio.com/items?itemName=idered.npm)
       - [Import Cost](https://marketplace.visualstudio.com/items?itemName=wix.vscode-import-cost)
+      - [i18n Ally](https://marketplace.visualstudio.com/items?itemName=lokalise.i18n-ally)
 
 ## Features
 
@@ -51,6 +52,8 @@ pnpm i
     - @vitejs/plugin-vue-jsx [📖](https://github.com/vitejs/vite-plugin-vue/tree/main/packages/plugin-vue-jsx)
     - @intlify/unplugin-vue-i18n/vite [📖](https://www.npmjs.com/package/@intlify/unplugin-vue-i18n)
     - unplugin-icons (autoInstall enabled) [📖](https://github.com/unplugin/unplugin-icons) [🎭](https://icones.js.org/)
+    - unplugin-auto-import [📖](https://github.com/unplugin/unplugin-auto-import)
+    - unplugin-vue-components [📖](https://github.com/unplugin/unplugin-vue-components)
   - Vue3
     - @vueuse/core [📖](https://vueuse.org/functions.html)
     - vue-i18n [📖](https://vue-i18n.intlify.dev/)
