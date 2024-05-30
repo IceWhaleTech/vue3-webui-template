@@ -1,10 +1,10 @@
-import fs from 'node:fs';
 import VueI18nPlugin from "@intlify/unplugin-vue-i18n/vite";
 import vue from "@vitejs/plugin-vue";
 import vueJsx from "@vitejs/plugin-vue-jsx";
+import fs from "node:fs";
 import AutoImport from "unplugin-auto-import/vite";
-import Icons from "unplugin-icons/vite";
 import IconsResolver from "unplugin-icons/resolver";
+import Icons from "unplugin-icons/vite";
 import Components from "unplugin-vue-components/vite";
 import { CommonServerOptions, defineConfig, loadEnv } from "vite";
 
@@ -51,7 +51,6 @@ const proxy = {
   // "^/chat.*": { target: "http://10.0.0.65:8001", changeOrigin: true },
 } as CommonServerOptions["proxy"];
 
-
 // globalProxyTarget:
 // The target server for the global proxy. except the custom proxy settings.
 const globalProxyTarget = `http://${process.env.VITE_REMOTE_SERVER_IP}:${process.env.VITE_REMOTE_SERVER_PORT ?? 80}`;
@@ -85,11 +84,11 @@ export default defineConfig({
     vue(),
     vueJsx(),
     Components({
-      resolvers: [
-        IconsResolver({}),
-      ],
+      dts: "src/types/components.d.ts",
+      resolvers: [IconsResolver({})],
     }),
     AutoImport({
+      dts: "src/types/auto-imports.d.ts",
       imports: ["vue", "vue-router", "vue-i18n"],
     }),
     VueI18nPlugin({
