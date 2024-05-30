@@ -1,10 +1,4 @@
 <script setup lang="ts">
-import HelloWorld from "./components/HelloWorld.vue";
-import RouterDemo from "./components/RouterDemo.vue";
-import TheHeroes from "./components/TheHeroes.vue";
-import { onMounted } from "vue";
-import { useI18n } from "vue-i18n";
-
 const { t } = useI18n();
 
 onMounted(() => {

@@ -5,7 +5,7 @@
     "stylelint.vscode-stylelint",
     "antfu.iconify",
     "idered.npm",
-    "wix.vscode-import-cost"
-  ],
-  "unwantedRecommendations": ["vscode.typescript-language-features"]
+    "wix.vscode-import-cost",
+    "lokalise.i18n-ally"
+  ]
 }

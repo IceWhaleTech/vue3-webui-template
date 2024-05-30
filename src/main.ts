@@ -4,7 +4,7 @@ import router from "./router";
 import "./style.css";
 import { pt } from "./tailwind";
 import PrimeVue, { PrimeVueConfiguration } from "primevue/config";
-import "primevue/resources/themes/lara-dark-blue/theme.css";
+// import "primevue/resources/themes/lara-dark-blue/theme.css";
 import Tooltip from "primevue/tooltip";
 import { createApp } from "vue";
 

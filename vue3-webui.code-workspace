@@ -22,6 +22,7 @@
     ],
     "scss.validate": false,
     "css.validate": false,
+    "i18n-ally.localesPaths": ["src/locales"],
   },
   "extensions": {
     "recommendations": [
@@ -31,7 +32,7 @@
       "antfu.iconify",
       "idered.npm",
       "wix.vscode-import-cost",
+      "lokalise.i18n-ally",
     ],
-    "unwantedRecommendations": ["vscode.typescript-language-features"],
   },
 }

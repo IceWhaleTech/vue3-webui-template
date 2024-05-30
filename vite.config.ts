@@ -1,12 +1,41 @@
+import fs from 'node:fs';
 import VueI18nPlugin from "@intlify/unplugin-vue-i18n/vite";
 import vue from "@vitejs/plugin-vue";
 import vueJsx from "@vitejs/plugin-vue-jsx";
+import AutoImport from "unplugin-auto-import/vite";
 import Icons from "unplugin-icons/vite";
-import { CommonServerOptions, defineConfig } from "vite";
+import IconsResolver from "unplugin-icons/resolver";
+import Components from "unplugin-vue-components/vite";
+import { CommonServerOptions, defineConfig, loadEnv } from "vite";
+
+// The mode of the current build.
+const mode =
+  process.env.NODE_ENV === "development"
+    ? "development"
+    : process.env.NODE_ENV === "production"
+      ? "production"
+      : "";
+
+// Load the environment variables from the .env file.
+process.env = {
+  ...process.env,
+  ...loadEnv(mode, process.cwd()),
+};
+
+// The entry file for the micro-frontend.
+// Default: "./public/entry.json"
+const entryPath = "./public/entry.json";
+
+// Read the entry file.
+let entryJson;
+if (fs.existsSync(entryPath)) {
+  const entryFileJson = JSON.parse(fs.readFileSync(entryPath, "utf-8"));
+  entryJson = entryFileJson.entry;
+}
 
 // The base path for the development server.
 // Usally it's like "/modules/app-name" depending on the /public/entry.json file.
-const devBase = "./";
+const devBase = entryJson ? entryJson.substring(0, entryJson.lastIndexOf("/")) : "./";
 
 // The base path for the production server.
 // Default: "./"
@@ -15,16 +44,17 @@ const prodBase = "./";
 // Enable the proxy for the development server.
 const useProxy = false;
 // Enable the global proxy for the development server.
-const useGlobalProxy = false;
+const useGlobalProxy = process.env.VITE_REMOTE_SERVER_IP ?? false;
 
 // Custom proxy settings
 const proxy = {
   // "^/chat.*": { target: "http://10.0.0.65:8001", changeOrigin: true },
 } as CommonServerOptions["proxy"];
 
+
 // globalProxyTarget:
 // The target server for the global proxy. except the custom proxy settings.
-const globalProxyTarget = "http://10.0.0.65";
+const globalProxyTarget = `http://${process.env.VITE_REMOTE_SERVER_IP}:${process.env.VITE_REMOTE_SERVER_PORT ?? 80}`;
 const globalProxy = (() => {
   const result = {} as CommonServerOptions["proxy"];
   const excludePaths = [
@@ -39,9 +69,14 @@ const globalProxy = (() => {
   return result;
 })();
 
+// The mode of the current build.
 const isDevMode = process.env.NODE_ENV === "development";
+// The base path for the current build.
 const base = isDevMode ? devBase : prodBase;
-console.log("base:", base);
+
+// Display the proxy settings.
+isDevMode && useGlobalProxy && console.log("Global Proxy Target:", globalProxyTarget);
+isDevMode && console.log("Dev Base:", base);
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -49,6 +84,14 @@ export default defineConfig({
   plugins: [
     vue(),
     vueJsx(),
+    Components({
+      resolvers: [
+        IconsResolver({}),
+      ],
+    }),
+    AutoImport({
+      imports: ["vue", "vue-router", "vue-i18n"],
+    }),
     VueI18nPlugin({
       include: ["./src/locales/**"],
     }),

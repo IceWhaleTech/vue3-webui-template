@@ -1,0 +1,20 @@
+{
+  "name": "zima-app",
+  "title": {
+    "en_us": "Zima App"
+  },
+  "prefetch": true,
+  "show": true,
+  "entry": "/modules/zima-app/index.html",
+  "icon": "/modules/zima-app/vite.svg",
+  "description": "Zima's Interesting App",
+  "formality": {
+    "type": "newtab",
+    "props": {
+      "width": "100vh",
+      "height": "100vh",
+      "hasModalCard": true,
+      "animation": "zoom-in"
+    }
+  }
+}
