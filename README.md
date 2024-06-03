@@ -50,10 +50,11 @@ pnpm i
   - Vite
     - @vitejs/plugin-vue [📖](https://github.com/vitejs/vite-plugin-vue/tree/main/packages/plugin-vue)
     - @vitejs/plugin-vue-jsx [📖](https://github.com/vitejs/vite-plugin-vue/tree/main/packages/plugin-vue-jsx)
-    - @intlify/unplugin-vue-i18n/vite [📖](https://www.npmjs.com/package/@intlify/unplugin-vue-i18n)
+    - @intlify/unplugin-vue-i18n [📖](https://www.npmjs.com/package/@intlify/unplugin-vue-i18n)
     - unplugin-icons (autoInstall enabled) [📖](https://github.com/unplugin/unplugin-icons) [🎭](https://icones.js.org/)
     - unplugin-auto-import [📖](https://github.com/unplugin/unplugin-auto-import)
     - unplugin-vue-components [📖](https://github.com/unplugin/unplugin-vue-components)
+    - unplugin-turbo-console [📖](https://github.com/unplugin/unplugin-turbo-console)
   - Vue3
     - @vueuse/core [📖](https://vueuse.org/functions.html)
     - vue-i18n [📖](https://vue-i18n.intlify.dev/)

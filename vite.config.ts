@@ -5,6 +5,7 @@ import fs from "node:fs";
 import AutoImport from "unplugin-auto-import/vite";
 import IconsResolver from "unplugin-icons/resolver";
 import Icons from "unplugin-icons/vite";
+import TurboConsole from "unplugin-turbo-console/vite";
 import Components from "unplugin-vue-components/vite";
 import { CommonServerOptions, defineConfig, loadEnv } from "vite";
 
@@ -98,6 +99,7 @@ export default defineConfig({
       autoInstall: true,
       compiler: "vue3",
     }),
+    TurboConsole({}),
   ],
   server: {
     proxy: {
