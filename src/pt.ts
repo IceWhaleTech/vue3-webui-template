@@ -1,7 +1,7 @@
 import { PrimeVuePTOptions } from "primevue/config";
 import { usePassThrough } from "primevue/passthrough";
-import Tailwind from "primevue/passthrough/tailwind";
+import Aura from "./presets/aura";
 
-export const pt = usePassThrough(Tailwind, {
-  // Custom Tailwind PassThrough
+export const pt = usePassThrough(Aura, {
+  // Custom PassThrough
 } as PrimeVuePTOptions);

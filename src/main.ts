@@ -1,11 +1,13 @@
 import App from "./App.vue";
 import { i18n } from "./i18n";
+import { pt } from "./pt";
 import router from "./router";
 import "./style.css";
-import { pt } from "./tailwind";
+import "@unocss/reset/tailwind-compat.css";
 import PrimeVue, { PrimeVueConfiguration } from "primevue/config";
 // import "primevue/resources/themes/lara-dark-blue/theme.css";
 import Tooltip from "primevue/tooltip";
+import "virtual:uno.css";
 import { createApp } from "vue";
 
 let app: ReturnType<typeof createApp>;

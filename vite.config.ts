@@ -2,6 +2,7 @@ import VueI18nPlugin from "@intlify/unplugin-vue-i18n/vite";
 import vue from "@vitejs/plugin-vue";
 import vueJsx from "@vitejs/plugin-vue-jsx";
 import fs from "node:fs";
+import UnoCSS from "unocss/vite";
 import AutoImport from "unplugin-auto-import/vite";
 import IconsResolver from "unplugin-icons/resolver";
 import Icons from "unplugin-icons/vite";
@@ -84,6 +85,7 @@ export default defineConfig({
   plugins: [
     vue(),
     vueJsx(),
+    UnoCSS(),
     Components({
       dts: "src/types/components.d.ts",
       resolvers: [IconsResolver({})],
