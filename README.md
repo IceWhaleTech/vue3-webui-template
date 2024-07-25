@@ -1,6 +1,6 @@
 # IceWhale Vue3 WebUI Template
 
-## Vite + Vue3 + TypeScript + PrimeVue + TailwindCSS + Wujie
+## Vite + Vue3 + TypeScript + PrimeVue + UnoCSS + Wujie
 
 This template should help get you started developing with [Vue 3](https://vuejs.org/) and TypeScript in [Vite](https://vitejs.dev/).
 
