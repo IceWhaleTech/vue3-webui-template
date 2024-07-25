@@ -1,7 +1,7 @@
-import { PrimeVuePTOptions } from "primevue/config";
-import { usePassThrough } from "primevue/passthrough";
-import Aura from "./presets/aura";
+import { usePassThrough } from 'primevue/passthrough'
+import type { ZexPrimeVuePTOptions } from 'zexui/primevue'
+import ZexPassthrough from 'zexui/primevue/passthrough'
 
-export const pt = usePassThrough(Aura, {
+export const pt = usePassThrough(ZexPassthrough, {
   // Custom PassThrough
-} as PrimeVuePTOptions);
+} as ZexPrimeVuePTOptions)

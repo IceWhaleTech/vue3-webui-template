@@ -1,12 +1,12 @@
 :root {
-  --at-apply: subpixel-antialiased;
-  --at-apply: bg-slate-800 text-white;
+  --at-apply: 'subpixel-antialiased';
+  --at-apply: 'bg-slate-800 text-white';
 }
 
 #app {
-  --at-apply: flex h-dvh w-dvw place-items-center justify-center;
+  --at-apply: 'flex h-dvh w-dvw place-items-center justify-center';
 }
 
 code {
-  --at-apply: rounded bg-gray-900/80 px-2 py-1 font-mono;
+  --at-apply: 'rounded bg-gray-900/80 px-2 py-1 font-mono';
 }
