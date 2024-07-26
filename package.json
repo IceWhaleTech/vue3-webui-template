@@ -9,7 +9,8 @@
     "build": "vue-tsc && vite build",
     "preview": "vite preview",
     "lint": "eslint .",
-    "lint:fix": "eslint . --fix"
+    "lint:fix": "eslint . --fix",
+    "lint:inspector": "pnpx @eslint/config-inspector"
   },
   "dependencies": {
     "@unocss/reset": "^0.61.5",
