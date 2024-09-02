@@ -14,6 +14,7 @@ export default antfu(
     name: 'vue3-webui-template',
     rules: {
       'no-console': 'off',
+      'ts/no-unused-expressions': 'off',
     },
   },
 )
