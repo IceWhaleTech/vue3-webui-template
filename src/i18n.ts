@@ -8,5 +8,6 @@ export const locale = Object.prototype.hasOwnProperty.call(messages, selectedLoc
 export const i18n = createI18n({
   legacy: false, // for composition API
   locale,
+  fallbackLocale: 'en_us',
   messages,
 })
