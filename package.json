@@ -19,7 +19,7 @@
     "primevue": "^4.0.5",
     "socket.io-client": "2.5.0",
     "vue": "^3.4.38",
-    "vue-i18n": "^9.14.0",
+    "vue-i18n": "^9.13.1",
     "vue-router": "^4.4.3",
     "wujie-vue3": "^1.0.22",
     "zexui": "^1.0.14"
