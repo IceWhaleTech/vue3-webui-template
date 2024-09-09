@@ -57,12 +57,14 @@ pnpm i
   - vue-i18n [📖](https://vue-i18n.intlify.dev/)
   - vue-router [📖](https://router.vuejs.org/)
 - TypeScript
-- UI Framework
-- PrimeVue [📖](https://primevue.org/)
-  - ZexUI [📖](https://github.com/IceWhaleTech/zexui)
+
+**UI Framework**
+- ZexUI [📖](https://github.com/IceWhaleTech/zexui)
+  - PrimeVue [📖](https://primevue.org/)
 - UnoCSS [📖](https://tailwindcss.com/docs)
   - preset-zex [📖](https://github.com/IceWhaleTech/preset-zex)
-- Micro Frontend
+
+**Micro Frontend**
 - Wujie [📖](https://wujie-micro.github.io/doc/)
 
 **Developer Experience**

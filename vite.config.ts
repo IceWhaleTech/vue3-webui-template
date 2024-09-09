@@ -70,7 +70,7 @@ export default defineConfig(({ command, mode }) => {
   })()
 
   // The mode of the current build.
-  const isDevMode = env.NODE_ENV === 'development'
+  const isDevMode = mode === 'development'
   // The base path for the current build.
   const base = isDevMode ? devBase : prodBase
 
