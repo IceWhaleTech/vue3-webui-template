@@ -1,23 +1,12 @@
-@layer tailwind-base, primevue, tailwind-utilities;
-
-@layer tailwind-base {
-  @tailwind base;
+:root {
+  --at-apply: 'subpixel-antialiased';
+  --at-apply: 'bg-slate-800 text-white';
 }
 
-@layer tailwind-utilities {
-  @tailwind components;
-  @tailwind utilities;
+#app {
+  --at-apply: 'flex h-dvh w-dvw place-items-center justify-center';
+}
 
-  :root {
-    @apply subpixel-antialiased;
-    @apply bg-slate-800 text-white;
-  }
-
-  #app {
-    @apply flex h-dvh w-dvw place-items-center justify-center;
-  }
-
-  code {
-    @apply rounded bg-gray-900/80 px-2 py-1 font-mono;
-  }
+code {
+  --at-apply: 'rounded bg-gray-900/80 px-2 py-1 font-mono';
 }

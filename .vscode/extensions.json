@@ -1,11 +1,20 @@
 {
   "recommendations": [
-    "MisterJ.vue-volar-extention-pack",
-    "bradlc.vscode-tailwindcss",
-    "stylelint.vscode-stylelint",
+    // For vue3 development experience
+    "Vue.volar",
+    // For lint and format
+    "dbaeumer.vscode-eslint",
+    // For unocss support
+    "antfu.unocss",
+    // For iconify support
     "antfu.iconify",
+    // For npm packages management
     "idered.npm",
-    "wix.vscode-import-cost",
-    "lokalise.i18n-ally"
+    // For i18n support
+    "lokalise.i18n-ally",
+    // For better development experience
+    "christian-kohler.path-intellisense",
+    "formulahendry.auto-close-tag",
+    "formulahendry.auto-rename-tag"
   ]
 }

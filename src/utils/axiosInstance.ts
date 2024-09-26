@@ -1,7 +1,7 @@
-import { useZimaAuth } from "./zimaAuth";
-import axios from "axios";
+import axios from 'axios'
+import { useZimaAuth } from './zimaAuth'
 
-const zimaAuthAxios = axios.create();
-useZimaAuth(zimaAuthAxios);
+const zimaAuthAxios = axios.create()
+useZimaAuth(zimaAuthAxios)
 
-export default zimaAuthAxios;
+export default zimaAuthAxios
