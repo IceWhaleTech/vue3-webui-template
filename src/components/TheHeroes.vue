@@ -16,11 +16,16 @@
         <span class="text-xl">TypeScript</span>
       </a>
       <span class="text-5xl font-extralight motion-safe:animate-pulse">+</span>
+      <a class="flex flex-col items-center" href="https://zexui.pages.dev" target="_blank">
+        <span class="logo zexui flex items-center justify-center rounded-2xl rounded-full text-3xl">
+          ZexUI
+        </span>
+      </a>
       <a class="flex flex-col items-center" href="https://primevue.org" target="_blank">
         <img class="logo primevue" src="../assets/primevue.svg" alt="PrimeVue">
         <span class="text-xl">PrimeVue</span>
       </a>
-      <a class="flex flex-col items-center" href="https://unocss.dev" target="_blank">
+      <a class="relative flex flex-col items-center" href="https://unocss.dev" target="_blank">
         <img class="logo unocss" src="../assets/unocss.svg" alt="UnoCSS">
         <span class="text-xl">UnoCSS</span>
       </a>
@@ -49,6 +54,9 @@
 }
 .logo.primevue:hover {
   --at-apply: 'drop-shadow-[0_0_2em_#42b883]';
+}
+.logo.zexui:hover {
+  --at-apply: 'drop-shadow-[0_0_2em_#fff]';
 }
 .logo.wujie:hover {
   --at-apply: 'drop-shadow-[0_0_2em_#ff0000aa]';

@@ -1,6 +1,38 @@
 import type { AxiosInstance } from 'axios'
 
-function safeUseAuthStore(useAuthStoreFunc?: Function) {
+function setTokens(options: { accessToken?: string, refreshToken?: string, expiresAt?: string }) {
+  options.accessToken && localStorage.setItem('access_token', options.accessToken)
+  options.refreshToken && localStorage.setItem('refresh_token', options.refreshToken)
+  options.expiresAt && localStorage.setItem('expires_at', options.expiresAt)
+}
+function clearTokens() {
+  localStorage.removeItem('access_token')
+  localStorage.removeItem('refresh_token')
+  localStorage.removeItem('expires_at')
+}
+
+function logout() {
+  const { clearTokens } = safeUseAuthStore()
+  clearTokens()
+
+  const url = new URL(window.location.href)
+  url.pathname = '/'
+  url.hash = '/login'
+  window.location.href = url.href
+}
+
+function safeUseAuthStore(useAuthStoreFunc?: () => {
+  access_token: string | null
+  refresh_token: string | null
+  setTokens: (
+    options: {
+      accessToken?: string
+      refreshToken?: string
+      expiresAt?: string
+    }
+  ) => void
+  clearTokens: () => void
+}) {
   try {
     if (!useAuthStoreFunc) {
       // raise error
@@ -18,16 +50,6 @@ function safeUseAuthStore(useAuthStoreFunc?: Function) {
     // { access_token, refresh_token, setTokens, clearTokens }
     const access_token = localStorage.getItem('access_token')
     const refresh_token = localStorage.getItem('refresh_token')
-    function setTokens(options: { accessToken?: string, refreshToken?: string, expiresAt?: string }) {
-      options.accessToken && localStorage.setItem('access_token', options.accessToken)
-      options.refreshToken && localStorage.setItem('refresh_token', options.refreshToken)
-      options.expiresAt && localStorage.setItem('expires_at', options.expiresAt)
-    }
-    function clearTokens() {
-      localStorage.removeItem('access_token')
-      localStorage.removeItem('refresh_token')
-      localStorage.removeItem('expires_at')
-    }
 
     return {
       access_token,
@@ -59,16 +81,6 @@ export function useZimaAuth(instance: AxiosInstance) {
 
   let isRefreshing = false
   let requests = [] as any
-
-  function logout() {
-    const { clearTokens } = safeUseAuthStore()
-    clearTokens()
-
-    const url = new URL(window.location.href)
-    url.pathname = '/'
-    url.hash = '/login'
-    window.location.href = url.href
-  }
 
   instance.interceptors.response.use(
     (response) => {

@@ -1,7 +1,7 @@
 import type { ZexPrimeVueConfiguration } from 'zexui/primevue'
-import ZexPrimeVue from 'zexui/primevue'
 import Tooltip from 'primevue/tooltip'
 import { createApp } from 'vue'
+import ZexPrimeVue from 'zexui/primevue'
 import App from './App.vue'
 import { i18n } from './i18n'
 import router from './router'

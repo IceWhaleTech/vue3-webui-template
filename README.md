@@ -1,14 +1,14 @@
-# IceWhale Vue3 WebUI Template (ZexUI Preview)
+# IceWhale Vue3 WebUI Template
 
-## Vite + Vue3 + TypeScript + PrimeVue + UnoCSS + Wujie
+## Vite + Vue3 + TypeScript + ZexUI + UnoCSS + Wujie
 
 This template should help get you started developing with [Vue 3](https://vuejs.org/) and TypeScript in [Vite](https://vitejs.dev/).
 
-[PrimeVue](https://primevue.org/) and [UnoCSS](https://unocss.dev/) are also pre-built to accelerate UI development.
+`ZexUI` (with [PrimeVue](https://primevue.org/)) and [UnoCSS](https://unocss.dev/) are also pre-built to accelerate UI development.
 
 Uses the [Wujie](https://wujie-micro.github.io/doc/) framework to allow WebApp to run independently or embedded in any WebUI project. Including [CasaOS](https://www.casaos.io) and `ZimaOS`.
 
-Plugins for [UnoCSS](https://unocss.dev/) and [ESLint](https://eslint.org/) have been configured to enhance the development experience.
+Plugins for [UnoCSS](https://unocss.dev/), [Iconify](https://iconify.design/) and [ESLint](https://eslint.org/) have been configured to enhance the development experience.
 
 The template uses Vue 3 `<script setup>` SFCs , check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
 
@@ -19,7 +19,7 @@ The template uses Vue 3 `<script setup>` SFCs , check out the [script setup docs
 The recommended package manager is [pnpm](https://pnpm.io/)
 
 ```bash
-pnpx degit IceWhaleTech/vue3-webui-template#zexui my-project
+pnpx degit IceWhaleTech/vue3-webui-template my-project
 
 cd my-project
 pnpm i
@@ -29,15 +29,15 @@ pnpm i
 
 [VS Code](https://code.visualstudio.com/)
 - Workspace (Recommended):
-  - Rename `vue3-webui.code-workspace` to `your-project-name.code-workspace`
-  - Open `your-project-name.code-workspace`
+  1. Rename `vue3-webui.code-workspace` to `my-project-name.code-workspace`
+  2. Open `my-project-name.code-workspace`
 - Settings:
-  - Follow the `your-project-name.code-workspace` settings (recommended)
+  - Follow the `my-project-name.code-workspace` settings (recommended)
   - Copy `vue3-webui.code-workspace` settings section to `.vscode/settings.json`
 - Extensions:
-  - Disable
+  1. Disable
     - Non-essential Extensions (Recommended)
-  - Install all recommended extensions
+  2. Install all recommended extensions
     - From `vue3-webui.code-workspace` (recommended)
     - From `.vscode/extensions.json`
 
@@ -59,17 +59,23 @@ pnpm i
 - TypeScript
 
 **UI Framework**
-- ZexUI [📖](https://github.com/IceWhaleTech/zexui)
+- ZexUI [📖](https://zexui.pages.dev) [📦](https://github.com/IceWhaleTech/zexui)
   - PrimeVue [📖](https://primevue.org/)
-- UnoCSS [📖](https://tailwindcss.com/docs)
-  - preset-zex [📖](https://github.com/IceWhaleTech/preset-zex)
+- UnoCSS ([📖](https://unocss.dev/), [Taiwind 📖](https://tailwindcss.com/docs))
+  - preset-zex [📦](https://github.com/IceWhaleTech/preset-zex)
+    - ZexUI Colors [📖](https://github.com/IceWhaleTech/preset-zex/blob/main/src/colors.ts)
+    - presetUno [📖](https://unocss.dev/presets/uno)
+    - presetIcons [📖](https://unocss.dev/presets/icons) [🎭](https://icones.js.org/)
+      - Recommended Format: `i-pkg-name:icon-name`
+      - autoInstall enabled
+      - `icewhale-icons-json` included as `iw`
+    - presetTypography [📖](https://unocss.dev/presets/typography)
 
 **Micro Frontend**
 - Wujie [📖](https://wujie-micro.github.io/doc/)
 
 **Developer Experience**
 - VSCode
-  - settings.json
   - extensions.json
   - .code-workspace
 - ESLint

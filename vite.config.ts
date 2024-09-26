@@ -1,3 +1,4 @@
+import type { CommonServerOptions } from 'vite'
 import fs from 'node:fs'
 import process from 'node:process'
 import VueI18nPlugin from '@intlify/unplugin-vue-i18n/vite'
@@ -9,13 +10,12 @@ import IconsResolver from 'unplugin-icons/resolver'
 import Icons from 'unplugin-icons/vite'
 import TurboConsole from 'unplugin-turbo-console/vite'
 import Components from 'unplugin-vue-components/vite'
-import type { CommonServerOptions } from 'vite'
-import { defineConfig, loadEnv } from 'vite'
+import { defineConfig, loadEnv, version } from 'vite'
 
 // https://vitejs.dev/config/
 export default defineConfig(({ command, mode }) => {
   console.log(`
-    Vite
+    Vite: ${version}
     Command: ${command}
     Mode: ${mode}
     `)
