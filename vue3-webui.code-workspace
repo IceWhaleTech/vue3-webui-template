@@ -100,7 +100,8 @@
       "scss",
       "pcss",
       "postcss"
-    ]
+    ],
+    "i18n-ally.keystyle": "nested"
   },
   "extensions": {
     "recommendations": [

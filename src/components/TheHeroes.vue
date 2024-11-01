@@ -21,10 +21,6 @@
           ZexUI
         </span>
       </a>
-      <a class="flex flex-col items-center" href="https://primevue.org" target="_blank">
-        <img class="logo primevue" src="../assets/primevue.svg" alt="PrimeVue">
-        <span class="text-xl">PrimeVue</span>
-      </a>
       <a class="relative flex flex-col items-center" href="https://unocss.dev" target="_blank">
         <img class="logo unocss" src="../assets/unocss.svg" alt="UnoCSS">
         <span class="text-xl">UnoCSS</span>

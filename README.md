@@ -4,7 +4,7 @@
 
 This template should help get you started developing with [Vue 3](https://vuejs.org/) and TypeScript in [Vite](https://vitejs.dev/).
 
-`ZexUI` (with [PrimeVue](https://primevue.org/)) and [UnoCSS](https://unocss.dev/) are also pre-built to accelerate UI development.
+`ZexUI` (with [PrimeVue](https://primevue.org/) & [Naivue UI](https://www.naiveui.com/)) and [UnoCSS](https://unocss.dev/) are also pre-built to accelerate UI development.
 
 Uses the [Wujie](https://wujie-micro.github.io/doc/) framework to allow WebApp to run independently or embedded in any WebUI project. Including [CasaOS](https://www.casaos.io) and `ZimaOS`.
 
@@ -61,6 +61,7 @@ pnpm i
 **UI Framework**
 - ZexUI [📖](https://zexui.pages.dev) [📦](https://github.com/IceWhaleTech/zexui)
   - PrimeVue [📖](https://primevue.org/)
+  - Naive UI [📖](https://www.naiveui.com/)
 - UnoCSS ([📖](https://unocss.dev/), [Taiwind 📖](https://tailwindcss.com/docs))
   - preset-zex [📦](https://github.com/IceWhaleTech/preset-zex)
     - ZexUI Colors [📖](https://github.com/IceWhaleTech/preset-zex/blob/main/src/colors.ts)
