@@ -21,7 +21,6 @@ export class MessageBus {
     this.socket = io(socketUrl, {
       transports: ['websocket'],
       path: socketPath,
-      reconnection: false,
     })
 
     this.socket.on('connect', () => {
